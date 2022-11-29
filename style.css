@@ -1,0 +1,167 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #333333;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.cal {
+
+
+    border-radius: 12px;
+    padding: 20px 15px 15px;
+    background-color: #fff;
+
+    box-shadow: inset 0px 0px 3px rgb(81, 81, 81);
+    margin: 0 20px 20px;
+
+}
+
+.cal .result {
+
+    border: 1px solid rgba(156, 156, 156, 0.277);
+    border-radius: 8px;
+
+    margin: 0 10px 10px;
+}
+
+
+.cal .result p {
+
+    text-align: right;
+    font-size: 3rem;
+    color: #333333;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+
+.keypad {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    font-size: 3rem;
+    color: rgb(85, 85, 85);
+
+    transition: all 0.3s;
+}
+
+.start {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.key {
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 1px #98989883;
+    border-radius: 10px;
+
+    padding: 15px;
+    margin: 12px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gray {
+
+    background-color: #333333;
+    color: #fff;
+    box-shadow: 0px 2px 2px 1px #98989883;
+
+}
+
+.khardeli {
+
+    background-color: #ffc400;
+    box-shadow: 0px 2px 2px 1px #98989883;
+    color: #333333;
+}
+
+body p {
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+
+
+@media (max-width : 700px) {
+
+
+    .cal .result p {
+        font-size: 2rem;
+    }
+
+
+    .keypad {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+@media (max-width : 480px) {
+
+
+    .cal .result p {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .cal {
+
+        margin: 0 40px 20px;
+    
+    }
+
+
+    .keypad {
+        font-size: 0.9rem;
+        font-weight: bold;
+        /* -webkit-tap-highlight-color: transparent; */
+        -webkit-tap-highlight-border-radius : 8px;
+
+       
+    }
+
+    .key {
+
+        
+        box-shadow: 0px 2px 4px 1px #98989883;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    
+       
+    }
+
+
+}
+
